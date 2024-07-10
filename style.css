@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+    
+    }
+
+.baground{
+height: 4000px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.815);
+background-size: cover;
+
+}
+    
+
+.herosection{
+    
+   
+    width: 100%;
+    height: 700px;
+    background-blend-mode: darken;                        /** this is used to put dark shade on the image  **/
+    background: rgba(0, 0, 0, 0.8);                       /** this is the color used on the image**/
+}
+
+.alignheader{
+    display:flex;
+}
+
+.logo{
+    background-image: url(logo.png);
+   width: 300px;
+    height: 80px;
+    background-size: cover;
+    margin: 50px 100px;
+}
+.lang{
+    color: white;
+    border: 2px solid white;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 43%;
+    position: relative;
+    margin-top: 70px;
+}
+.signin{
+    color: white;
+    background-color: rgb(246, 40, 40);
+    height: 34px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    position: relative;
+    margin-top: 70px;
+}
+
+/** MIDDLE TEXT**/
+
+.display{
+color: aliceblue;
+width: 1000px;
+margin-left: 250px;
+margin-top: 150px;
+
+}
+.display b{
+    font-size: 2.7rem;
+    font-weight: 900;
+    display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+
+}
+
+.display p {
+ font-size: 1.3rem;
+    display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}
+
+
+.email-start{
+    height: 100px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    margin-left: 460px;
+    margin-top: 25px;
+
+}
+.email{
+    color: white;
+    border: 1px solid rgb(218, 218, 218);
+    background-color:rgba(0, 0, 0, 0.529);
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 400px;
+   padding-left: 20px;                   /*** here it is used to shift email letters toward rightt by 20px  **/
+}
+
+.startbutton{
+    
+    color: white;
+    background-color: rgb(246, 40, 40);
+    height: 54px;
+    width: 184px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+/**  Detailss   **/
+
+.details{
+   display: flex;
+    margin-top: 8px;
+    height: 570px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.f1{
+    height: 140px;
+    width: 550px;
+    margin-left: 200px;
+    position: relative;
+    margin-top: 200px;
+
+}
+
+.details b {
+font-size: 2.7rem;
+font-weight: 900;
+color: aliceblue;
+}
+
+.details p{
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 15px;
+    color: aliceblue;
+}
+
+.f1-img{
+ height: 450px;
+ width: 650px;
+ background-size: cover;
+ position: inherit;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+
+
+/**-----------------------------------------------**/
+
+.footer{
+    border-top: 8px solid rgb(83, 78, 78);
+    background-color: black;
+    
+    
+    }
+
+.faq {
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.faq h2 {
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 70px;
+}
+
+.accordion {
+    margin: 20px auto ;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {                                 /**   this is used to to print " + "  after the question **/
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;                           /** use to hide the radio button **/
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {               /**   this is used to to rotate " + "  after the question **/
+    transform: rotate(135deg);
+}
+
+
+/**--------------------------------------------------------------**/
+
+.footer2{
+    
+    height: 400px;
+    background-color: black;
+    margin-top: 8px;
+    padding: 50px 15% 10px;
+}
+
+.footer2 h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: rgb(175, 175, 175);
+}
+.footer2 .row{
+    display: flex;
+}
+
+.footer2 .column{
+    flex-basis: 25%;
+   flex-grow: 1;                                   /** used to make distance between two coloums **/
+    margin-bottom: 20px;                            /** margin to the down space just like margin left **/
+    
+}
+
+.footer2 .column a{
+    display: block;                                 /** use to create blocks **/
+    text-decoration: underline;                     /** use to decorate the text**/
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: rgb(182, 182, 182);
+    cursor: pointer;                                 /** uswd to modify the pointer**/
+}
+
+.lang2{
+    color: white;
+    border: 1.5px solid white;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    justify-content: space-evenly;
+    
+}
+.footer2 p{
+    font-size: 15px;
+    color: rgb(179, 179, 179);
+    margin-top: 25px;
+}
